@@ -1,0 +1,159 @@
+@charset "utf-8";
+/********基本設定**********/
+body{
+    line-height:150%;
+    font-size:18px;
+    background:#fff;
+}
+img {
+    image-rendering: -webkit-optimize-contrast;
+}
+a{text-decoration: none;}
+.disp_foot{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1601fd; /* 必要に応じて背景色を設定 */
+    z-index: 100; /* 他の要素より前面に表示 */
+    text-align: center; /* 必要に応じて中央揃え */
+    padding: 1rem 0; /* 必要に応じて余白を調整 */
+}
+.swiper-container{
+    padding:0 20px;
+}
+h1{line-height:140%;}
+h2{line-height:130%;font-size:1.3rem;text-align:center;}
+h3{}
+h3 span{color:#4a5f85;font-size:1.6rem;line-height:120%;display:block;margin-bottom:10px;}
+h4{margin:20px 0 10px;}
+
+.swiper-container p{font-size:14px;line-height:140%;}
+.link{text-align:center;line-height:180%;}
+.link span{font-weight:700;font-size:1.3rem;}
+
+.voice{font-style: italic;background:#ececec;padding:10px;font-size:.8rem;line-height:140%;}
+
+ul{list-style:none;font-size:12px;padding:0;line-height:130%;}
+li{display: inline-block;margin-bottom:10px;border-bottom:1px dashed #ccc;padding-bottom:5px;}
+
+.footer-btn{
+    background:#fffb00;
+    color:#1601fd;
+    padding:.8rem 2rem;
+    border-radius:4px;
+    font-weight:bold;
+}
+.footer-btn:hover{
+    background:#f8f690;
+    color:#1601fd;
+}
+.bg-white{background:#fff;}
+header{
+        width: 100%;
+        height: 70px;
+        position: relative;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        border-bottom: 1px solid #d7d7d7;
+        background: #fff;
+}
+footer{
+    text-align:center;
+    color:#a9a9ae;
+    padding-top:30px;
+}
+.container{
+    padding:30px;
+}
+section{
+    margin: 0 auto 0;
+    padding-top: 71px;
+    background:#fff;
+}
+section img{width:100%;}
+
+
+
+/***********文字サイズ設定***********/
+.size1{font-size:1.2rem;}
+.size2{font-size:1.4rem;}
+.size3{font-size:1.6rem;}
+.size4{font-size:1.8rem;}
+.size-1{font-size:.8rem;}
+.size-2{font-size:.6rem;}
+.size-3{font-size:.4rem;}
+.size-4{font-size:.2rem;}
+
+/***********文字装飾設定***********/
+.bold{font-weight:bold;}
+.u_line{text-decoration: underline;}
+.red{color:#ff0000;}
+.blue{color:#1601fd;}
+.b_yellow{background-color:#fffd7e;}
+.gray{color: #a9a9ae;}
+/********フォーム設定**********/
+.input_ml input{
+    padding:.6rem;
+    width:100%;
+    max-width:480px;
+}
+button{
+    background:#f5aa01;
+    padding:1rem 1.6rem;
+    cursor: pointer;
+    border-radius: 90px;
+    border:0;
+    font-weight:600;
+    font-size:1.2rem;
+}
+button:before{
+    font: var(--fa-font-solid);
+    content: '\f05e';
+    color:#ff0000;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    padding-right:.4rem;
+}
+.ms_box{
+    background:#ffe8e6;
+    padding:1rem;
+    width:90%;
+    max-width:520px;
+    margin:0 auto;
+    margin-bottom:1rem;
+    color:#ff0000;
+    font-size:1rem;
+}
+
+.nav-link{
+    color:#000 !important;
+    font-size:1rem;
+}
+.logo {width: 600px;margin: 0 auto 0;display: block;}
+.logo img{height:70px;margin-top:0;}
+
+.data{margin-bottom:1rem;}
+.link{font-size:1rem;}
+.header-text{
+        font-size: 12px;
+        font-weight: bold;
+        color: #b8b8b8;
+        text-align:right;
+        vertical-align: top;
+        margin-top:-46px;
+}
+
+.fv{display:block;}
+.fv_sp{display:none;}
+.pc_disp{display:block;}
+.sp_disp{display:none;}
+@media screen and (max-width: 480px) {
+    .fv{display:none;}
+    .fv_sp{display:block;padding:0 1rem;}
+    .fv_sp img{width:100%;}
+    .pc_disp{display:none;}
+    .sp_disp{display:block;}
+}
