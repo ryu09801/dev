@@ -3,7 +3,7 @@
 body{
     line-height:150%;
     font-size:18px;
-    background:#fff;
+    background:#ececec;
 }
 img {
     image-rendering: -webkit-optimize-contrast;
@@ -13,39 +13,94 @@ a{text-decoration: none;}
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #1601fd; /* 必要に応じて背景色を設定 */
+    background-color: #3a4d7d; /* 必要に応じて背景色を設定 */
     z-index: 100; /* 他の要素より前面に表示 */
     text-align: center; /* 必要に応じて中央揃え */
     padding: 1rem 0; /* 必要に応じて余白を調整 */
 }
 .swiper-container{
-    padding:0 20px;
+    padding:0 40px;
+    max-width:600px;
+    width:100%;
+    margin:0 auto;
+    background:#fff;
 }
-h1{line-height:140%;}
-h2{line-height:130%;font-size:1.3rem;text-align:center;}
+h1{line-height:140%;font-size:4em;}
+h1 span{color:#d36b09;}
+h2{line-height:130%;font-size:2.3rem;text-align:center;}
 h3{}
-h3 span{color:#4a5f85;font-size:1.6rem;line-height:120%;display:block;margin-bottom:10px;}
-h4{margin:20px 0 10px;}
-
-.swiper-container p{font-size:14px;line-height:140%;}
+h3 span{color:#3a4d7d;font-size:2rem;line-height:120%;display:block;margin-bottom:10px;}
+h4{margin:60px 0 10px;font-size:26px;color:#3a4d7d;}
+ul{list-style:none;font-size:16px;padding:0;line-height:130%;}
+li{display: inline-block;margin-bottom:10px;border-bottom:1px dashed #ccc;padding-bottom:5px;}
+.swiper-container p{font-size:18px;line-height:160%;}
+.link{font-size:2rem;}
+@media screen and (max-width: 480px) {
+    .swiper-container{
+        padding:0 20px;
+    }
+    h1{font-size:2.5em;}
+    h2{font-size:1.3rem;}
+    h3 span{font-size:1.6rem;}
+    h4{font-size:18px;margin:20px 0 10px;}
+    ul{font-size:12px;}
+    .swiper-container p{font-size:14px;line-height:140%;}
+    .link{font-size:1rem;}
+    .link span{font-weight:700;font-size:1.3rem;}
+}
+/* スクロールダウンの位置 */
+.scroll {
+    padding-top: 60px;
+    position: relative;
+    text-align: center;
+  }
+  /* 矢印のアニメーション部分 */
+  .scroll::before {
+    animation: scroll 2s infinite;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    content: "";
+    height: 20px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20px;
+  }
+  /* 矢印のアニメーション */
+  @keyframes scroll {
+    0% {
+      opacity: 0;
+      transform: rotate(-45deg) translate(0, 0);
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+      transform: rotate(-45deg) translate(-20px, 20px);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
 .link{text-align:center;line-height:180%;}
 .link span{font-weight:700;font-size:1.3rem;}
 
 .voice{font-style: italic;background:#ececec;padding:10px;font-size:.8rem;line-height:140%;}
 
-ul{list-style:none;font-size:12px;padding:0;line-height:130%;}
-li{display: inline-block;margin-bottom:10px;border-bottom:1px dashed #ccc;padding-bottom:5px;}
-
 .footer-btn{
     background:#fffb00;
-    color:#1601fd;
+    color:#3a4d7d;
     padding:.8rem 2rem;
     border-radius:4px;
     font-weight:bold;
 }
 .footer-btn:hover{
     background:#f8f690;
-    color:#1601fd;
+    color:#3a4d7d;
 }
 .bg-white{background:#fff;}
 header{
@@ -136,7 +191,7 @@ button:before{
 .logo img{height:70px;margin-top:0;}
 
 .data{margin-bottom:1rem;}
-.link{font-size:1rem;}
+
 .header-text{
         font-size: 12px;
         font-weight: bold;
