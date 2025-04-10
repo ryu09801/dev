@@ -7,6 +7,7 @@ body{
 }
 img {
     image-rendering: -webkit-optimize-contrast;
+    width:100%;
 }
 a{text-decoration: none;}
 .disp_foot{
@@ -16,7 +17,7 @@ a{text-decoration: none;}
     background-color: #3a4d7d; /* 必要に応じて背景色を設定 */
     z-index: 100; /* 他の要素より前面に表示 */
     text-align: center; /* 必要に応じて中央揃え */
-    padding: 1rem 0; /* 必要に応じて余白を調整 */
+    padding: 1.6rem 0; /* 必要に応じて余白を調整 */
 }
 .swiper-container{
     padding:0 40px;
@@ -85,7 +86,7 @@ li{display: inline-block;margin-bottom:10px;border-bottom:1px dashed #ccc;paddin
       opacity: 0;
     }
   }
-  
+
 .link{text-align:center;line-height:180%;}
 .link span{font-weight:700;font-size:1.3rem;}
 
