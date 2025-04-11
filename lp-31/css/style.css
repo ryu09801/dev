@@ -6,7 +6,7 @@ body{
     background:#ececec;
 }
 img {
-    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
     width:100%;
     max-width: 100%;
     max-height: 100%;
