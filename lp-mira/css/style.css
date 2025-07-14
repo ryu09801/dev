@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+body{line-height:150%;font-size:18px;}
+
+header{
+    background:url(../img/header.png) no-repeat center top;
+    padding:1.4rem 0;
+    text-align:center;
+    box-sizing: border-box;
+    background-size: cover; /* 画像を要素に収まるように拡大縮小 */
+}
+#header_txt{}
+.footer_btn{
+    position: fixed; 
+    bottom: 0;   /* 画面の最下部に配置 */
+    left: 0;     /* 画面の左端に配置 */
+    width: 100%; /* 画面の幅いっぱいに広げる */
+    background-color: rgb(21, 183, 6);
+    text-align:center;
+    padding:1rem 0;
+}
+.footer_btn a{
+text-decoration: none;
+color:#fff;
+font-weight:bold;
+display:block;
+}
+h1{
+    color:#063256;
+    font-size:2em;
+    font-family: sans-serif;
+    padding:1em 0 1em;
+}
+h1 span{font-weight:bold;}
+@media screen and (max-width: 480px) {
+h1{font-size:1.2em;}
+.page2 h1{font-size:1.4em;}
+.page2 h1 span{font-size:1rem;}
+}
+.page1{
+    padding:2em 0 1em;
+}
+.page2{
+    padding:.2em 0 1em;
+    background:#ffea00;
+    background-attachment: fixed; 
+}
+.page4{
+    padding:.2em 0 1em;
+    background:url(../img/page4_bg.png) no-repeat center bottom;
+    box-sizing: border-box;
+    background-size: cover; /* 画像を要素に収まるように拡大縮小 */
+  background-position: center;
+  background-attachment: fixed; 
+}
+.page6{
+    padding:.2em 0 1em;
+    background:url(../img/page6_bg.png) no-repeat center bottom;
+    box-sizing: border-box;
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+.page7{
+    padding:.2em 0 1em;
+    background:url(../img/page7_bg.png) no-repeat center bottom;
+    box-sizing: border-box;
+    background-size: cover; /* 画像を要素に収まるように拡大縮小 */
+  background-attachment: fixed; 
+}
+.page8{
+    padding:.2em 0 1em;
+    background:url(../img/page8_bg.png) no-repeat center bottom;
+    box-sizing: border-box;
+    background-size: contain; /* 画像を要素に収まるように拡大縮小 */
+  background-attachment: fixed; 
+}
+.page10{
+    padding:.2em 0 1em;
+    background:#2daccb;
+    box-sizing: border-box;
+    background-size: contain; /* 画像を要素に収まるように拡大縮小 */
+  background-attachment: fixed; 
+}
+.page11{
+    padding:.2em 0 1em;
+    background:#399fe5 url(../img/page11_bg.png) no-repeat center bottom;
+    box-sizing: border-box;
+    background-size: contain; /* 画像を要素に収まるように拡大縮小 */
+  background-attachment: fixed; 
+}
+.page11 .txt_box{
+    background: rgba(255, 255, 255, 0.5);
+    padding:2rem;
+    text-shadow:1px 1px 3px #fff;
+}
+.page2 h1{color:#000;font-weight:bold;font-size:2.6em;padding:1em 0 0;}
+.page2 h1 span{font-size:1.2rem;font-weight:normal;}
+.page4 h1{
+text-shadow: 0px 0px 14px rgba(255,255,255,1);}
+.txt_box{
+    text-align:left;
+    max-width:800px;
+    width:100%;
+    margin:0 auto;
+}
+.txt_box span{color:#ff0000;}
+
+.form{
+    max-width:800px;
+    width:100%;
+    margin:0 auto;
+    margin-bottom:20px;
+}
+.form th{
+    background: #eee;
+    border: solid 1px #ccc;
+    color: #000;
+    padding: 20px;
+    width:30%;
+}
+.form td{
+    border: solid 1px #ccc;
+    background: #fff;
+    padding: 20px;
+}
+.form_btn{
+    background:#da424e;
+    color:#fff;
+    font-size:2em;
+    font-weight:bold;
+    padding:1.4rem 0;
+    border:none;
+    border-radius: 90px;
+    width:280px;
+}
+.form_btn:hover{
+     background:#ee616d;
+}
+
+.form input{padding:5px;margin-right:5px;}
+.form .mail{max-width:380px;width:100%;}
+@media screen and (max-width: 480px) {
+  .last td:last-child {
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+  }
+  .form {
+    width: 96%;
+  }
+  .form th,
+  .form td {
+　　border-bottom: none;
+    display: block;
+    width: 100%;
+  }
+.form input{width:100%;margin-bottom:5px;}
+.form th{
+    padding: 16px 10px;
+}
+.form td{
+    padding: 16px 10px;
+}
+}
+        .container{
+            padding:1rem;
+            max-width:990px;
+            width:100%;
+            margin:0 auto;
+            text-align:center;
+        }
+        .ms_box{
+            background:#ffe8e6;
+            padding:1rem;
+            width:90%;
+            max-width:520px;
+            margin:0 auto;
+            margin-bottom:1rem;
+            color:#ff0000;
+            font-size:1rem;
+        }
+        h2{font-weight:normal;font-size:1rem;line-height:140%;}
+        h5{color:#922f01;}
+        
+        button{
+            background:#4d61ff;
+            padding:1rem 1.6rem;
+            cursor: pointer;
+            border-radius: 90px;
+            border:0;
+            font-weight:600;
+            font-size:1.2rem;
+            color:#fff;
+        }
+        button:before{
+            font: var(--fa-font-solid);
+            content: '\e4e8';
+            color:#fff;
+            display: inline-block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            padding-right:.4rem;
+        }
+.nav-link{color:#000 !important;font-size:1rem;}
+.logo img{width:200px;}
+
+.sp_disp{display:none;}
+.pc_disp{display:block;}
+
+.view{}
+
+@media screen and (max-width: 480px) {
+    .sp_disp{display:block;}
+    .pc_disp{display:none;}
+    .input input{text-align:center;}
+  }
